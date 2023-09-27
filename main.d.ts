@@ -3,7 +3,11 @@ export declare const runNpmCli: (
   options: {
     fs: unknown;
     cwd: string;
-    stdout: (chunk: string) => void;
-    stderr: (chunk: string) => void;
+    stdout?: (chunk: string) => void;
+    stderr?: (chunk: string) => void;
+    timings?: {
+      start: (name: string) => void
+      end: (name: string) => void
+    },
   },
 ) => Promise<void>;
