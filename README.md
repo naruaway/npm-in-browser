@@ -52,6 +52,8 @@ For working examples using bundlers such as Vite, please check out /examples dir
 
 Note that if you are fine with loading 3rd party non open source code from 3rd party host, [WebContainers](https://webcontainers.io/) or [NodeBox](https://sandpack.codesandbox.io/docs/advanced-usage/nodebox) can be a better option. Since they use dedicated CDN for their services, loading performance can be better as well. Debugging, profiling, and tuning (customizing) could be easier with npm-in-browser though.
 
+npm-in-browser is [distributed as a pure ESM npm package](https://www.npmjs.com/package/npm-in-browser).
+
 ## Runtime performance
 
 We know that WebContainers / NodeBox are highly optimized in many ways. However, it turned out that both initial boot time and warm start up time is not so bad. You can see it by yourself.
