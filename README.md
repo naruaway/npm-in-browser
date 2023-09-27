@@ -51,7 +51,7 @@ If you just want to play with it without any frontend bundlers, you can import p
 </script>
 ```
 
-For working examples using bundlers such as Vite, please check out [/examples directory](examples) of this repo.
+For working examples using bundlers such as Vite, please check out [examples directory of this repo](examples).
 
 Note that if you are fine with loading 3rd party non open source code from 3rd party host, [WebContainers](https://webcontainers.io/) or [NodeBox](https://sandpack.codesandbox.io/docs/advanced-usage/nodebox) can be a better option. Since they use dedicated CDN for their services, loading performance can be better as well. Debugging, profiling, and tuning (customizing) could be easier with npm-in-browser though.
 
