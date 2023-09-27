@@ -43,9 +43,12 @@ console.log(
 
 If you just want to play with it without any frontend bundlers, you can import packages from esm.sh like:
 
-```typescript
-import memfs from "https://esm.sh/memfs@4.5.0";
-import { runNpmCli } from "https://esm.sh/npm-in-browser@0.1.0";
+```html
+<script type="module">
+  import memfs from "https://esm.sh/memfs@4.5.0";
+  import { runNpmCli } from "https://esm.sh/npm-in-browser@0.1.0";
+  ...
+</script>
 ```
 
 For working examples using bundlers such as Vite, please check out /examples directory of this repo.
