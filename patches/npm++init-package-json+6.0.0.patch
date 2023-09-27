@@ -1,0 +1,13 @@
+diff --git a/node_modules/npm/node_modules/init-package-json/lib/init-package-json.js b/node_modules/npm/node_modules/init-package-json/lib/init-package-json.js
+index 077ebd9..312a17d 100644
+--- a/node_modules/npm/node_modules/init-package-json/lib/init-package-json.js
++++ b/node_modules/npm/node_modules/init-package-json/lib/init-package-json.js
+@@ -7,7 +7,7 @@ const read = require('read')
+ const util = require('util')
+ const rpj = require('read-package-json')
+ 
+-const def = require.resolve('./default-input.js')
++const def = '' // require.resolve('./default-input.js')
+ 
+ // to validate the data object at the end as a worthwhile package
+ // and assign default values for things.

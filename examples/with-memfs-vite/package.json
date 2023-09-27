@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "name": "npm-in-browser-demo-with-memfs",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "../../node_modules/.bin/vite",
+    "build": "../../node_modules/.bin/vite build"
+  }
+}
