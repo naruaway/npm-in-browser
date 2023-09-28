@@ -1,6 +1,7 @@
 {
   "name": "npm-in-browser",
   "type": "module",
+  "description": "npm CLI in browser without 3rd party services or blackbox scripts",
   "repository": {
     "type": "git",
     "url": "https://github.com/naruaway/npm-in-browser.git"
