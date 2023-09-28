@@ -1,5 +1,5 @@
 const makeFetchHappenShim = (url, options) => {
-  if (typeof url !== "string" || !url.startsWith("https://")) {
+  if (typeof url !== "string" || !(url.startsWith("https://") || url.startsWith("http://"))) {
     throw new Error("makeFetchHappenShim failed: url is not valid");
   }
   return fetch(url).then((r) => {
@@ -16,18 +16,34 @@ const makeFetchHappenShim = (url, options) => {
             on(eventName, handler) {
               // FIXME: we might need to handle events on `body` properly
             },
-            pipe(target) {
+            pipe(dest) {
               const reader = rs.getReader();
               void (async () => {
                 while (true) {
                   const ret = await reader.read();
                   if (ret.done) break;
-                  target.write(ret.value);
+                  dest.write(ret.value);
                 }
-                target.end();
+                dest.end();
               })();
             },
           };
+        } else if (prop === "buffer") {
+          return async () => {
+            const rs = target.body
+
+            const reader = rs.getReader();
+            const chunks = []
+            while (true) {
+              const ret = await reader.read();
+              if (ret.done) break;
+              chunks.push(ret.value);
+            }
+            return Buffer.concat(chunks)
+          }
+        } else if (prop === "headers") {
+          val.raw = () => Object.fromEntries(Array.from(val.entries()).map(([k, v]) => [k, [v]]))
+          return val
         } else {
           return val;
         }
