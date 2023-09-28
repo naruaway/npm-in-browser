@@ -55,7 +55,7 @@ If you just want to play with it without any frontend bundlers, you can import p
 
 For working examples using bundlers such as Vite, please check out [examples directory of this repo](examples). I also created [a demo using StackBlitz](https://stackblitz.com/edit/npm-in-browser-demo?file=src%2Fmain.tsx), which feels weird since StackBlitz itself can do "npm install" by itself via WebContainers.
 
-Note that if you are fine with loading 3rd party non open source code from 3rd party host, [WebContainers](https://webcontainers.io/) or [Nodebox](https://sandpack.codesandbox.io/docs/advanced-usage/nodebox) can be a better option. Since they use dedicated CDN for their services, loading performance can be better as well. Debugging, profiling, and tuning (customizing) could be easier with npm-in-browser though.
+Note that if you are fine with loading 3rd party non open source code from 3rd party host and there is no concern around commercial licensing, [WebContainers](https://webcontainers.io/) or [Nodebox](https://sandpack.codesandbox.io/docs/advanced-usage/nodebox) can be a better option. Since they use dedicated CDN for their services, loading performance can be better as well. Debugging, profiling, and tuning (customizing) could be easier with npm-in-browser though.
 
 npm-in-browser is [distributed as a pure ESM npm package](https://www.npmjs.com/package/npm-in-browser).
 
