@@ -74,7 +74,7 @@ TODO: I'll put "npm install" benchmarks for npm-in-browser, WebContainers, and N
 - It does not send most of HTTP headers for the npm registry. If specific features of npm require these, it does not work.
 - Running `runNpmCli` several times leaks some amount of memory. This can be mitigated by running it in Web Workers and terminate them appropriately.
 - Since there is no runtime enforcement for the isolation, running `runNpmCli` could pollute some globals.
-- The npm registry does not return CORS header appropriately for "404 Not Found" responses (e.g. `"https://registry.npmjs.org/abc-xyz-123456"`). Because of this, we cannot distinguish general fetch error and "not found" error
+- The npm registry does not return CORS header appropriately for "404 Not Found" responses (e.g. `"https://registry.npmjs.org/abc-xyz-123456"`). Because of this, we cannot distinguish general fetch error and "not found" error. https://github.com/naruaway/npm-in-browser/issues/1
 
 ## License
 
