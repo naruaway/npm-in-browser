@@ -1,6 +1,6 @@
 # npm-in-browser
 
-Please help spread [the initial annoucement X post](https://x.com/naruaway/status/1706984800081605062)!
+Please help spread [the initial announcement X post](https://x.com/naruaway/status/1706984800081605062)!
 
 Note: This was initially developed for [JS Bundle Lab](https://js-bundle-lab.nry.app)
 
