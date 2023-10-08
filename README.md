@@ -66,7 +66,7 @@ Note that the performance of `fs` is **really** important here. For example, we 
 
 ## Benchmarks
 
-TODO: I'll put "npm install" benchmarks for npm-in-browser, WebContainers, and Nodebox
+You can check out [In-browser "npm install" benchmark](https://npm-install-browser-benchmark.nry.app), where we compare the performance of WebContainers, Nodebox, and npm-in-browser.
 
 ## Known issues
 
